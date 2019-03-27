@@ -1,36 +1,159 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home</title>
+    <title>QUIZIT</title>
+    <link rel="icon" type="image/ico" href="newQuizit.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXDD2RLyi5MQf-d3qYWa0nC3Pu3oqTA5M&callback=initMap">
-    </script>
+    <link rel="stylesheet" type="text/css" media="screen" href="home.css" />
+    <script src="home.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-    <div id="navbar"><a style=" text-decoration: none; color: white;" href="home.html"><b><span id="sp">College-Pedia</span></b></a></div> 
-    <br><br><br><br><Br>
-    <div style="text-align:center;"><hr>
-            <select id="source">
-                    <option value="1">Stadium</option>
-                    <option value="15">M-block</option>
-                    <option value="65">Main Gate</option>
-                    <option value="21">SJT</option>
-                    </select>
-                    <select id="destination">
-                            <option value="1">Stadium</option>
-                            <option value="15">M-block</option>
-                            <option value="65">Main Gate</option>
-                            <option value="21">SJT</option>
+        <div id="welcom"><div id="wlcomin">Welcome<br>to<br>QUIZIT</div></div>
+    <div id="front"></div>
+    <div id="back"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed !important; width: 100% !important;">
+            <a class="navbar-brand" href="home.html"><b><span id="logo">QUIZIT</span></b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Features</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
+                <a class="nav-item nav-link disabled" href="#">Disabled</a>
+              </div>
+            </div>
+</nav>
+<br><br><br><br><br>
+<div id="intrro">Here are 10 multiple choice questions that you need to attempt.<br>
+GOOD LUCK!!!</div>
+<br><br><br><br>
 
-                    </select><hr><br><br>
-    <div id = "cover"><div id="map"></div></div><br>
-    <button id="btn" onclick="callme();show();">Click Here</button></div>
-    
+<div>
+<div class="Ques">Which is the highest waterfall in India?
+       <br><br> <div class="reslt" id="reslt1" >Its height is 830 feet and is located on Sharavati River.</div>
+</div>
+<div class="ans">
+    <form>
+        <input type="radio" name="ques1"  value="1"> Dudhsagar Falls<br>
+        <input type="radio" name="ques1"  value="2"> Jog Falls<br>
+        <input type="radio" name="ques1"  value="3"> Palaruvi Falls<br>
+        <input type="radio" name="ques1"  value="4"> Meenmutty Falls<br>
+    </form>
+</div>
+
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div>
+        <div class="Ques">Which is the most literate Union territory in India?<br><br><div class="reslt" id="reslt2" >Literacy rate in here has seen upward trend and is 91.85 percent as per 2011.
+                 </div></div>
+        <div class="ans"> <form>
+                <input type="radio" name="ques2"  value="1"> Delhi<br>
+                <input type="radio" name="ques2"  value="2"> Chandigarh<br>
+                <input type="radio" name="ques2"  value="3"> Puducherry<br>
+                <input type="radio" name="ques2"  value="4"> Lakshadweep<br>
+            </form>
+        </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div>
+        <div class="Ques">Which is the first atomic station in India?<br><br> <div class="reslt" id="reslt3" >It is located near Boiser in the Thane District of Maharashtra.</div></div>
+        <div class="ans" > <form>
+                <input type="radio" name="ques3"  value="1"> Tarapore Power Station<br>
+                <input type="radio" name="ques3"  value="2"> Rajasthan Power Station<br>
+                <input type="radio" name="ques3"  value="3"> Madras Power Station<br>
+                <input type="radio" name="ques3"  value="4"> Narora Power Station<br>
+            </form>
+        </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div>
+        <div class="Ques">Which is the largest auditorium in India?<br><br> <div class="reslt" id="reslt4" >In Mumbai, is the largest auditorium in India</div></div>
+        <div class="ans"> <form>
+                <input type="radio" name="ques4"  value="1"> Saint Andrew Auditorium<br>
+                <input type="radio" name="ques4"  value="2"> Tejpal Auditorium<br>
+                <input type="radio" name="ques4"  value="3"> Sri Shanmukhananda Hall<br>
+                <input type="radio" name="ques4"  value="4"> Sudarshan Rangmanch<br>
+            </form>
+        </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div>
+        <div class="Ques">Which is the highest award in India?<br><br> <div class="reslt" id="reslt5" >It 
+                is the highest civilian award, which was instituted on 2 January 1954.</div></div>
+        <div class="ans"> <form>
+                <input type="radio" name="ques5"  value="1"> Bharat Ratna<br>
+                <input type="radio" name="ques5"  value="2"> Padma Vubhushan<br>
+                <input type="radio" name="ques5"  value="3"> Padma Bhushan<br>
+                <input type="radio" name="ques5"  value="4"> Padma Shri<br>
+            </form>
+        </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div>
+        <div class="Ques">Which is the highest award for gallantry in India?<br><br> <div class="reslt" id="reslt6">It is awarded to officers for courage or self-sacrifice in the presence of the enemy.
+
+                </div></div>
+        <div class="ans"> <form>
+                <input type="radio" name="ques6"  value="1"> Param Vir Chakra<br>
+                <input type="radio" name="ques6"  value="2"> Vir Chakra<br>
+                <input type="radio" name="ques6"  value="3"> Mahavir Chakra<br>
+                <input type="radio" name="ques6"  value="4"> Shaurya Chakra<br>
+            </form>
+        </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div></div>
+    <div class="Ques">Who achieved the highest balloon flight in India?<br><br> <div class="reslt" id="reslt7" > On 26 November 2005, he achieved the altitude record over Mumbai, India.</div></div>
+        <div class="ans"> <form>
+                <input type="radio" name="ques7"  value="1"> Vijaypat Singhania<br>
+                <input type="radio" name="ques7"  value="2"> Gautam Singhania<br>
+                <input type="radio" name="ques7"  value="3"> Hari Shankar Singhania<br>
+                <input type="radio" name="ques7"  value="4"> Indu Shahani<br>
+            </form>
+        </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+<div>
+        <div class="Ques">Which is the first bank in India?<br><br> <div class="reslt" id="reslt8" >Established in 1770.</div></div>
+        <div class="ans"> <form>
+                <input type="radio" name="ques8"  value="1"> General Bank of India<br>
+                <input type="radio" name="ques8"  value="2"> Bank of Hindustan<br>
+                <input type="radio" name="ques8"  value="3"> State Bank of India<br>
+                <input type="radio" name="ques8"  value="4"> Bank of Bombay<br>
+            </form>
+        </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div>
+        <div class="Ques">Which is the first indigenous bank in India?<br><br> <div class="reslt" id="reslt9" >It is an Indian financial services company based in New Delhi founded in 1894.</div></div>
+        <div class="ans"> <form>
+                <input type="radio" name="ques9"  value="1"> Punjab National Bank<br>
+                <input type="radio" name="ques9"  value="2"> Imperial Bank of India<br>
+                <input type="radio" name="ques9"  value="3"> New Bank of India<br>
+                <input type="radio" name="ques9"  value="4"> State Bank of India<br>
+        </form>
+        </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div>
+        <div class="Ques">Which is the largest public sector bank in India?<br><br> <div class="reslt" id="reslt10" >It is among the 100 topmost banks in the world</div></div>
+        <div class="ans"> <form>
+                <input type="radio" name="ques10"  value="1"> Bank of India<br>
+                <input type="radio" name="ques10"  value="2"> Canara Bank<br>
+                <input type="radio" name="ques10"  value="3"> State Bank of India<br>
+                <input type="radio" name="ques10"  value="4"> Union Bank of India<br>
+            </form>
+        </div>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div id="btnsty"><input id="btnst" type="button" onclick="chek();" value="Submit Now!!"> </div>
+
+
+
+
 </body>
 </html>
