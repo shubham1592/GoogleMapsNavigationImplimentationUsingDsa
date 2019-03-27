@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXDD2RLyi5MQf-d3qYWa0nC3Pu3oqTA5M&callback=initMap">
+    </script>
+</head>
+<body>
+    <div id="navbar"><a style=" text-decoration: none; color: white;" href="home.html"><b><span id="sp">College-Pedia</span></b></a></div> 
+    <br><br><br><br><Br>
+    <div style="text-align:center;"><hr>
+            <select id="source">
+                    <option value="1">Stadium</option>
+                    <option value="15">M-block</option>
+                    <option value="65">Main Gate</option>
+                    <option value="21">SJT</option>
+                    </select>
+                    <select id="destination">
+                            <option value="1">Stadium</option>
+                            <option value="15">M-block</option>
+                            <option value="65">Main Gate</option>
+                            <option value="21">SJT</option>
+
+                    </select><hr><br><br>
+    <div id = "cover"><div id="map"></div></div><br>
+    <button id="btn" onclick="callme();show();">Click Here</button></div>
+    
+</body>
+</html>
