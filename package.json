@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node server.js"
+    "start": "node mapserver.js"
   },
   "engines": {
     "node": "9.8.0"
