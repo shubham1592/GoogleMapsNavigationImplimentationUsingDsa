@@ -2,7 +2,8 @@ var xhttp = new XMLHttpRequest();
 var data = '';
  function callme(){
     var list = [];
-    var query = "http://localhost:8080/?id=1"+"&src="+document.getElementById('source').options[document.getElementById('source').options.selectedIndex].value+
+    console.log(window.location.href);
+    var query = window.location.href+"?id=1"+"&src="+document.getElementById('source').options[document.getElementById('source').options.selectedIndex].value+
                 "&dest="+document.getElementById('destination').options[document.getElementById('destination').options.selectedIndex].value;
         xhttp.onreadystatechange= function(){
             if(this.readyState == 4 && this.status == 200){
