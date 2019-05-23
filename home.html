@@ -9,28 +9,99 @@
     <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXDD2RLyi5MQf-d3qYWa0nC3Pu3oqTA5M&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEK2lNJ7ekp7VdRAe9Jc3JzxIf3sB40GE&callback=initMap">
     </script>
 </head>
 <body>
-    <div id="navbar"><a style=" text-decoration: none; color: white;" href="home.html"><b><span id="sp">College-Pedia</span></b></a></div> 
-    <br><br><br><br><Br>
-    <div style="text-align:center;"><hr>
-            <select id="source">
-                    <option value="1">Stadium</option>
-                    <option value="15">M-block</option>
-                    <option value="65">Main Gate</option>
-                    <option value="21">SJT</option>
-                    </select>
-                    <select id="destination">
-                            <option value="1">Stadium</option>
-                            <option value="15">M-block</option>
-                            <option value="65">Main Gate</option>
-                            <option value="21">SJT</option>
 
-                    </select><hr><br><br>
-    <div id = "cover"><div id="map"></div></div><br>
-    <button id="btn" onclick="callme();show();">Click Here</button></div>
+    <div id="navbar"><a style=" text-decoration: none; color: white;" href="home.html"><b><span id="sp"><b>College-Pedia</b></span></b></a></div> 
+    <div id="stat">
+        <br><br><br>
+        <button class = 'cho' onclick="window.location = '/';";>Home</button><hr style="width:150px;">
+        <button class = 'cho' onclick="window.location = '/'; "style="font-size:50px;">Navigate</button><hr style="width:150px;">
+        <button class = 'cho' onclick="window.location = window.location.href + 'messages'; " style="font-size:50px;">Messages</button><hr style="width:150px;">
+    </div>
+    <div id="backcontent"></div>
+    <div id="content">
+        <br>
+            <div id="map"></div>
+        <hr>
+            <label for="source"><b>Starting Point</b></label> 
+            <select id="source">
+                    <option value="21">SJT</option>
+                    <option value="33">Technological Tower</option>
+                    <option value="47">SMV</option>
+                    <option value="73">GDN</option>
+                    <option value="57">Library</option>
+                    <option value="62">Dr. MGR Block</option>
+                    <option value="70">Anna Audi</option>
+                    <option value="65">Main Gate</option>
+                    <option value="15">M-block</option>
+                    <option value="78">Swiming Pool</option>
+                    <option value="9">Main Subway</option>
+                    <option value="18">SJT Ground</option>
+                    <option value="25">Ladies Hostel 1</option>
+                    <option value="27">Mother Teresa Block</option>
+                    <option value="35">Food Court</option>
+                    <option value="39">VIT Lake</option>
+                    <option value="43">Greenos</option>
+                    <option value="45">Foodys</option>
+                    <option value="41">Gate 3</option>
+                    <option value="49">Wood Stock</option>
+                    <option value="76">All Mart</option>
+                    <option value="77">Health Care</option>
+                    <option value="1">Stadium</option>
+                    </select>
+            &nbsp&nbsp&nbsp&nbsp
+            <label for="destination"><b>Destination</b></label> 
+            <select id="destination">
+                    <option value="21">SJT</option>
+                    <option value="33">Technological Tower</option>
+                    <option value="47">SMV</option>
+                    <option value="73">GDN</option>
+                    <option value="57">Library</option>
+                    <option value="62">Dr. MGR Block</option>
+                    <option value="70">Anna Audi</option>
+                    <option value="65">Main Gate</option>
+                    <option value="15">M-block</option>
+                    <option value="78">Swiming Pool</option>
+                    <option value="9">Main Subway</option>
+                    <option value="18">SJT Ground</option>
+                    <option value="25">Ladies Hostel 1</option>
+                    <option value="27">Mother Teresa Block</option>
+                    <option value="35">Food Court</option>
+                    <option value="39">VIT Lake</option>
+                    <option value="43">Greenos</option>
+                    <option value="45">Foodys</option>
+                    <option value="41">Gate 3</option>
+                    <option value="49">Wood Stock</option>
+                    <option value="76">All Mart</option>
+                    <option value="77">Health Care</option>
+                    <option value="1">Stadium</option>
+                    </select>
+            &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp
+            <select id="accomodation">
+                <option value="1.2">Walking</option>
+                <option value="5.2">Cycle</option>
+                <option value="13.8">Car</option>
+                <option value="7.4">Shuttle</option>
+            </select>
+            <div id="isme"></div>
+                    <hr><br>
+    <button id="btn" onclick="callme();show();">Click Here</button>
+    <br><br><br>
+    <div id="duri" style="width:100% !important; height: auto !important; text-align: left !important;">VIT's main campus in Vellore is on 250 acres of land.<br>
+          It is divided by the Chennai–Bangalore railway line.<br>
+          The academic portion of the campus and the women's hostels are to the south of the railway tracks while the northern portion houses the men's hostels and the outdoor stadium.<br>
+          The parts are connected by three subways.<br>
+          The campus resembles a city, with lake, gardens, lawns, residential complexes, food courts, hair salons and wide roads. <br>
+          The campus has its own water supply and backup electricity supply along with shopping complexes to cater to the needs of residents.<br>
+          VIT is in the city of Vellore in India's southern state, Tamil Nadu, between Chennai and Bangalore. <br>
+          It is 130 km west of Chennai and 180 km east of Bangalore. The nearest airport is Chennai (two and half hours drive). <br>
+          Vellore-Katpadi Junction is the nearest railway station, 3 km from campus.<br></div>
+</div>
+
+
     
 </body>
 </html>

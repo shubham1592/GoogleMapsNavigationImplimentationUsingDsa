@@ -2,6 +2,7 @@ var xhttp = new XMLHttpRequest();
 var data = '';
  function callme(){
     var list = [];
+    var dist = 0;
     console.log(window.location.href);
     var query = window.location.href+"?id=1"+"&src="+document.getElementById('source').options[document.getElementById('source').options.selectedIndex].value+
                 "&dest="+document.getElementById('destination').options[document.getElementById('destination').options.selectedIndex].value;
@@ -13,13 +14,18 @@ var data = '';
                 for(var i = 0; i< data.path.length; i++){
                     list.push({"lat": data.path[i][0], "lng": data.path[i][1]});
                 }
-                console.log(list);
+                dist = data.dist;
+                var time = (dist/((document.getElementById('accomodation').options[document.getElementById('accomodation').options.selectedIndex].value)*60)).toFixed(2);
+                document.getElementById('isme').innerHTML = "<br><div id = 'duri'>Distance: "+dist+" m &nbsp&nbspTime: "+time+" min</div>";
+                console.log("Duri "+dist);
+                console.log("rasta "+list);
                 initMap(list);
             }
         };
     xhttp.open('get', query, true);
     xhttp.send();
         };
+
 
  
  
@@ -42,6 +48,6 @@ var data = '';
     }
 
 function show(){
-    document.getElementById('map').style.width =  1300+'px';
-    document.getElementById('map').style.height = 830+'px';
+    document.getElementById('map').style.width =  1000+'px';
+    document.getElementById('map').style.height = 600+'px';
 }
