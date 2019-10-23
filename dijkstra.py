@@ -5,14 +5,14 @@ import json
 # we'll use infinity as a default distance to nodes.
 inf = float('inf')
 Edge = namedtuple('Edge', 'start, end, cost')
-
+#edge is used here s an tuple
 start = sys.argv[1]
 destination = sys.argv[2]
 
 def make_edge(start, end, cost=1):
   return Edge(start, end, cost)
 
-
+#this work is done by shubham
 class Graph:
     def __init__(self, edges):
         # let's check that the data is right
@@ -41,7 +41,7 @@ class Graph:
         else:
             node_pairs = [[n1, n2]]
         return node_pairs
-
+#Function for getting node pairs
     def remove_edge(self, n1, n2, both_ends=True):
         node_pairs = self.get_node_pairs(n1, n2, both_ends)
         edges = self.edges[:]
