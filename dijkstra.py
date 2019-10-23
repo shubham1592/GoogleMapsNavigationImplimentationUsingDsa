@@ -29,7 +29,12 @@ class Graph:
                 ([edge.start, edge.end] for edge in self.edges), []
             )
         )
-
+      
+    def printOnThis()
+      print("keep going")
+      return 0
+    #made changes now
+    
     def get_node_pairs(self, n1, n2, both_ends=True):
         if both_ends:
             node_pairs = [[n1, n2], [n2, n1]]
