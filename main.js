@@ -25,18 +25,15 @@ var data = '';
     xhttp.open('get', query, true);
     xhttp.send();
         };
-
-
- 
- 
- function initMap(locat) {
+//xhttp.open('get',query, true);
+function initMap(locat) {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 17,
           center: {lat:12.971432,lng:79.160235},
           mapTypeId: 'terrain'
         });
         console.log(locat);
-        var flightPlanCoordinates = locat;
+        var flightPlaneCoordinates = locat;
         var flightPath = new google.maps.Polyline({
           path: flightPlanCoordinates,
           geodesic: true,
